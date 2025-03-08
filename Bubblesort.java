@@ -11,15 +11,15 @@ public class Bubblesort {
         }
         // int arr[]= {2,1,3,4,5};
         // int n=arr.length;
-        int temp=0;
+        for(int i=0;i<arr.length;i++)
         {
-            for(int j=0;j<n-1;j++)
+            for(int j=i+1;j<n;j++)
             {
-                if(arr[j+1]<arr[j])
+                if(arr[j]<arr[i])
                 {
-                    temp=arr[j+1];
-                    arr[j+1]=arr[j];
-                    arr[j]=temp;
+                    int temp=arr[j];
+                    arr[j]=arr[i];
+                    arr[i]=temp;
                 }
             }
         }

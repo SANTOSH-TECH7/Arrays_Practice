@@ -12,6 +12,8 @@ public class deletearr
         {
             arr[i]=sc.nextInt();
         }
+
+        Arrays.sort(arr);
         System.out.println("enter the value to be deleted");
         int ins_val=sc.nextInt();
         int newarr[]=new int[n-1];
